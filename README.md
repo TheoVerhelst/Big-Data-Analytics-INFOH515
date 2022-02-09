@@ -1,6 +1,7 @@
 # [INFO-H515 - Big Data Scalable Analytics](https://uv.ulb.ac.be/course/view.php?id=85246)
 
 #### *Théo Verhelst, Daniele Lunghi and Gianluca Bontempi* - [Machine Learning Group](http://mlg.ulb.ac.be) 
+#### *Material from Yann-Aël Leborgne and Gianluca Bontempi*
 
 # Exercise classes - Overview 
 
