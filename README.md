@@ -23,7 +23,7 @@ The material is available as a set of Jupyter notebooks.
 From the command line, use
 
 ```
-git clone https://github.com/Yannael/BigDataAnalytics_INFOH515
+git clone https://github.com/TheoVerhelst/Big-Data-Analytics-INFOH515
 ```
 
 If using the course cluster, you will have to use SFTP to send this folder to the cluster.
