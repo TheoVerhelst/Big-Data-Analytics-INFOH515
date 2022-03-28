@@ -49,12 +49,12 @@ to your `.bash_rc`.
 
 ### Spark
 
-Download from https://spark.apache.org/downloads.html (Use version 3.2.0 (October 2020), prebuilt for Apache Hadoop 3.3). Untar and add executables to your PATH, as well as Python libraries to PYTHONPATH
+Download from https://spark.apache.org/downloads.html (Use version 3.2.1 (January 2022), prebuilt for Apache Hadoop 3.3). Untar and add executables to your PATH, as well as Python libraries to PYTHONPATH
 
 ```
 export SPARK_HOME=where_you_untarred_spark
 export PATH=$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
-export PYTHONPATH="$SPARK_HOME/python/lib/pyspark.zip:$SPARK_HOME/python/lib/py4j-0.10.4-src.zip"
+export PYTHONPATH="$SPARK_HOME/python/lib/pyspark.zip:$SPARK_HOME/python/lib/py4j-0.10.9.3-src.zip"
 ```
 
 ### Keras and tensorflow
