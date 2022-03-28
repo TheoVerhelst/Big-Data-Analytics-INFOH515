@@ -1,7 +1,7 @@
 # [INFO-H515 - Big Data Scalable Analytics](https://uv.ulb.ac.be/course/view.php?id=85246)
 
 #### *Théo Verhelst, Daniele Lunghi and Gianluca Bontempi* - [Machine Learning Group](http://mlg.ulb.ac.be)
-#### *Material from Yann-Aël Leborgne and Gianluca Bontempi*
+#### *Material from Yann-Aël Leborgne, Jacopo De Stefani and Gianluca Bontempi*
 
 # Exercise classes - Overview
 
@@ -57,16 +57,6 @@ export PATH=$SPARK_HOME/bin:$SPARK_HOME/sbin:$PATH
 export PYTHONPATH="$SPARK_HOME/python/lib/pyspark.zip:$SPARK_HOME/python/lib/py4j-0.10.4-src.zip"
 ```
 
-### Kafka
-
-Download from https://kafka.apache.org/downloads, and untar archive. Start with
-
-```
-export KAFKA_HOME=where_you_untarred_kafka
-nohup $KAFKA_HOME/bin/zookeeper-server-start.sh $KAFKA_HOME/config/zookeeper.properties  > $HOME/zookeeper.log 2>&1 &
-nohup $KAFKA_HOME/bin/kafka-server-start.sh $KAFKA_HOME/config/server.properties > $HOME/kafka.log 2>&1 &
-```
-
 ### Keras and tensorflow
 
 Install with `pip`
@@ -103,13 +93,3 @@ After setting up your environment (either in a Docker or your own machine) you s
 * Run all cells
 
 Follow instructions in `Check_Setup/Demo_RDD_local.ipynb` to have access to Spark UI.
-
-### Kafka - Test with Check_Setup scripts
-
-1. Run the script `Check_Setup/0_kafka_startup.sh` to start Zookeeper and Kafka.  
-2. Run the script `Check_Setup/1_kafka_test_topic.sh` to check whether a topic can be created and deleted successfully.
-3. **In two separate terminals:**
-	1. Start first `Check_Setup/2_kafka_test_sender.sh`, and try sending some messages, by entering some text and concluding the message with the Enter key.
-	2. Start first `Check_Setup/3_kafka_test_receiver.sh`, and check that the messages sent by the sender are correctly received.
-
-## FAQ
